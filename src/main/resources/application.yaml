@@ -1,0 +1,18 @@
+spring:
+  datasource:
+    url: jdbc:postgresql://localhost:5432/turtle_db
+    username: turtle_user
+    password: secretpassword
+  jpa:
+    hibernate:
+      ddl-auto: validate
+    properties:
+      hibernate:
+        default_schema: turtle
+        jdbc:
+          time_zone: UTC
+    show-sql: true
+  jackson:
+    time-zone: Europe/Budapest
+server:
+  port: 8080
